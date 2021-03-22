@@ -46,7 +46,38 @@ body {
 /*Tasks*/
 
 .tasks {
-    margin: 15px 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.tasks .top {
+    background: #484848;
+    width: 1098px;
+    height: 50px;
+    margin: 0 0 25px 250px;
+}
+
+.tasks .top input {
+    text-indent: 15px;
+    width: 970px;
+    height: 30px;
+    float: left;
+    margin: 10px 25px 0 50px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.tasks .top button {
+    background: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: right;
+}
+
+.tasks .top button a {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }
 
 .tasks ul li {
@@ -58,6 +89,15 @@ body {
     text-align: center;
     list-style: none;
     cursor: pointer;
+    display: flex;
+}
+
+.tasks input {
+    background-color: #eee;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    margin: 7px 0 0 10px;
 }
 
 .tasks ul li span {
