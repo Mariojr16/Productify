@@ -22,15 +22,34 @@ body {
     background: orangered;
     width: 100%;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+.logo h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .sidebar ul {
-    margin: 50px 0 0 0 ;
+    margin: 40px 0 0 0 ;
 }
 
 .sidebar ul li {
-    margin: 0 0 50px 50px ;
+    margin: 0 0 50px 60px ;
     list-style: none;
+}
+
+.sidebar ul li:last-child {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
 }
 
 .sidebar ul li a {
@@ -39,6 +58,11 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+.sidebar ul li a:hover {
+    color: orangered;
 }
 
 /*Sidebar-END*/
@@ -54,6 +78,8 @@ body {
     width: 1098px;
     height: 50px;
     margin: 0 0 25px 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tasks .top input {
@@ -61,35 +87,52 @@ body {
     width: 970px;
     height: 30px;
     float: left;
-    margin: 10px 25px 0 50px;
+    margin: 10px 0px 0 50px;
     border-radius: 10px;
     outline: none;
 }
 
 .tasks .top button {
-    background: black;
+    background: orangered;
     width: 50px;
-    height: 50px;
+    height: 30px;
     cursor: pointer;
     float: right;
+    border-radius: 10px;
+    position: relative;
+    right: 30px;
+    top: 11px;
+    border: none;
+    outline: none;
+}
+
+.tasks .top button:hover {
+    background: rgb(201, 54, 0);
 }
 
 .tasks .top button a {
-    color: rgb(255, 255, 255);
+    color: 	#ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .tasks ul li {
-    background: #a0a0a0;
+    background: #a0a0a0a2;
     width: 1000px;
     height: 40px;
-    border-radius: 25px;
+    border-radius: 10px;
     margin: 0 0 10px 300px;
     text-align: center;
     list-style: none;
     cursor: pointer;
     display: flex;
+    transition: background 0.1s;
+}
+
+.tasks ul li:hover {
+    background: darkgrey;
 }
 
 .tasks input {
